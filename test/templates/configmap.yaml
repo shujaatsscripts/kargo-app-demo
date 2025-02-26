@@ -8,7 +8,7 @@ metadata:
     avp.kubernetes.io/path: projects/821273130140/secrets/secretonly
 data:
   key: <secretonly>
-
+---
 apiVersion: v1
 kind: ConfigMap
 metadata:

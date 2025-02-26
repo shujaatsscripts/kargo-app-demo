@@ -4,8 +4,10 @@ metadata:
   name: secretonly
   labels:
     app: secretonly
+  annotations:
+    avp.kubernetes.io/path: projects/821273130140/secrets/secretonly
 data:
-  key: <path:projects/821273130140/secrets/secretonly#secretonly>
+  key: <secretonly>
 
 apiVersion: v1
 kind: ConfigMap
@@ -13,6 +15,8 @@ metadata:
   name: testsecret
   labels:
     app: testsecret
+  annotations:
+    avp.kubernetes.io/path: projects/821273130140/locations/me-central2/secrets/testsecret
 data:
-  key: <path:projects/821273130140/locations/me-central2/secrets/testsecret#testsecret>
+  key: <testsecret>
 

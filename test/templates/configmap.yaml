@@ -5,6 +5,6 @@ metadata:
   labels:
     app: secretonly
 data:
-  username: <path:/v1/kv/data/creds#username>
-  password: <path:/v1/kv/data/creds#password>
+  username: <path:kv/v2/v1/data/creds#username>
+  password: <path:kv/v2/v1/data/creds#password>
 

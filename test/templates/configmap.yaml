@@ -4,19 +4,7 @@ metadata:
   name: secretonly
   labels:
     app: secretonly
-  annotations:
-    avp.kubernetes.io/path: projects/821273130140/secrets/secretonly
 data:
-  key: <secretonly>
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: testsecret
-  labels:
-    app: testsecret
-  annotations:
-    avp.kubernetes.io/path: projects/821273130140/locations/me-central2/secrets/testsecret
-data:
-  key: <testsecret>
+  username: <path:/v1/kv/data/creds#username>
+  password: <path:/v1/kv/data/creds#password>
 

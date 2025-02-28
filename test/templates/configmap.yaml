@@ -8,3 +8,18 @@ data:
   username: <path:kv/data/creds#username>
   password: <path:kv/data/creds#password>
 
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-inside
+  labels:
+    app: configmap-inside
+data:
+  secret.yml: |-
+    TEST= <path:kv/data/creds#username>
+  username: <path:kv/data/creds#username>
+  password: <path:kv/data/creds#password>
+
+
